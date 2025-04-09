@@ -1,0 +1,40 @@
+package codingtest;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Practice2 {
+
+	public static void main(String[] args) {
+		
+//		배열 A가 주어졌을 때, N번째 큰 값을 출력하는 프로그램을 작성하시오.
+//		배열 A의 크기는 항상 10이고, 자연수만 가지고 있다. N은 항상 3이다.
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		
+		
+		for(int i = 0; i<N; i++) {
+			int[] A = new int[10];
+			
+			for (int j = 0; j<10; j++) {
+			A[j] = sc.nextInt();
+			
+			
+			
+			}
+			Arrays.sort(A);
+			System.out.println(A[7]);
+		
+			}
+	
+		
+	
+		}
+		
+		
+		
+	}
+
+
+
