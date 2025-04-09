@@ -1,13 +1,14 @@
 package codingtest;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Dwarf {
 
 	public static void main(String[] args) {
 		
-		// 7명이 아닌 9명이 옴
-		// 키를 합치면 100
+	
 		int sum = 0;
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,22 +16,28 @@ public class Dwarf {
  		
 		for(int i = 0; i<9; i++) {
 			
-			dwarf[i] = sc.nextInt();
-//			System.out.println("난쟁이 키 = " +i+"번쨰"+ dwarf[i]);
-			
-			
-			// 7명 합쳐서 100이 되는 숫자면 멈춤
-			
-		}
+			sum += dwarf[i] = sc.nextInt();
 		
-		for (int i = 0; i< 8; i++)
-		{
-			for (int j=1; j<9; j++) {
-				
-				sum += dwarf[i] + dwarf[j];
-			
+		}
+		Arrays.sort(dwarf);
+
+		
+		for(int i = 0; i<dwarf.length-1; i++) {
+			for (int j=i+1; j<dwarf.length; j++) {
+				if(sum - dwarf[i] - dwarf[j] == 100) {
+					for(int k = 0; k < dwarf.length; k++) {
+						if(k != i && k != j) {
+							System.out.println(dwarf[k]);
+							
+						}
+					}
+					return;
+					
+				}
 			}
 		}
+		
+
 
 	}
 
