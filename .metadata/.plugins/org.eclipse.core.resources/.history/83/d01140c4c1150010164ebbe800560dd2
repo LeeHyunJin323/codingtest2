@@ -1,0 +1,40 @@
+package codingtest;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Practice3 {
+
+	public static void main(String[] args) {
+	
+		// 1 22 333 4444 5555 의 수열이 있음
+		// 만약 3 과 7을 입력 시 
+		// 3~7의 번째의 값들을 더 해준 값을 리턴 받으면 됨
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		List<Integer> list = new ArrayList();
+		
+		// list.size()< b ??
+	int num = 1; 
+      while(list.size()<b) {
+			for(int i = a; i<num; i++)
+		{
+			list.add(num);
+			// a의 숫자 만큼 받기
+		}
+			num++;
+      }
+
+	
+		
+		System.out.println(list);
+		
+
+		
+		
+	}
+
+}
