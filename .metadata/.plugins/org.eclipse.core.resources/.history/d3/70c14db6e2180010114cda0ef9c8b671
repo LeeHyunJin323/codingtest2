@@ -1,0 +1,36 @@
+package codingtest;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Practice1978 {
+
+	public static void main(String[] args) {
+		// 첫 줄에 수의 개수 N이 주어진다 
+		// N은 100 이하 
+		// N개의 수가 주어지는데 수는 1000 이하의 자연수
+		
+		// 4를 받으면 숫자 4개를 받을 수 있음
+		
+		// 주어진 수 중 소수면 count ++ 해서 값 먹이면 될듯
+		int count = 0;
+		List<Integer> list = new ArrayList();
+	
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		
+		
+		for (int i = 0; i<N; i++)
+		{
+			list.add(i);
+			
+		System.out.println(list.get(i));
+		
+		// 
+		}
+		
+	}
+
+}
+

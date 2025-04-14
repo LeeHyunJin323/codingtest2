@@ -38,7 +38,6 @@ public class Practice3 {
       {
     	  sum += list.get(i);
       }
-  
 	
   
     		 

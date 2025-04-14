@@ -37,8 +37,8 @@ public class Practice3 {
       for(int i = a-1; i<b; i++)
       {
     	  sum += list.get(i);
+    	  System.out.println(list.get(0));
       }
-  
 	
   
     		 
